@@ -4,7 +4,11 @@ import time
 import random
 
 
-def character_printer(hair_color = None, eye_color = None, scarf_color = None, pants_color = None):
+def character_printer(
+        hair_color=None,
+        eye_color=None,
+        scarf_color=None,
+        pants_color=None):
     """
     Print a character representation with different colors.
 
@@ -21,15 +25,83 @@ def character_printer(hair_color = None, eye_color = None, scarf_color = None, p
     print(colored("  ██████████████████", hair_color))
     print(colored("  ████████████████████", hair_color))
     print(colored("██████████████████████", hair_color))
-    print(colored("████████", hair_color) + colored("██", eye_color) + "░░░░" + colored("██", eye_color) + "░░" + colored("████", hair_color))
-    print(colored("██████", hair_color) + "░░" + colored("██", eye_color) + "░░░░" + colored("██", eye_color) + "░░" + colored("████", hair_color))
-    print(colored("  ████", hair_color) + "░░░░░░░░░░░░" + colored("██", hair_color))
-    print(colored("  ██", hair_color) + "░░░░░░░░░░░░░░" + colored("██", hair_color))
-    print(colored("    ██", hair_color) + "░░░░░░░░░░" + colored("████", hair_color))
+    print(
+        colored(
+            "████████",
+            hair_color) +
+        colored(
+            "██",
+            eye_color) +
+        "░░░░" +
+        colored(
+            "██",
+            eye_color) +
+        "░░" +
+        colored(
+            "████",
+            hair_color))
+    print(
+        colored(
+            "██████",
+            hair_color) +
+        "░░" +
+        colored(
+            "██",
+            eye_color) +
+        "░░░░" +
+        colored(
+            "██",
+            eye_color) +
+        "░░" +
+        colored(
+            "████",
+            hair_color))
+    print(
+        colored(
+            "  ████",
+            hair_color) +
+        "░░░░░░░░░░░░" +
+        colored(
+            "██",
+            hair_color))
+    print(
+        colored(
+            "  ██",
+            hair_color) +
+        "░░░░░░░░░░░░░░" +
+        colored(
+            "██",
+            hair_color))
+    print(
+        colored(
+            "    ██",
+            hair_color) +
+        "░░░░░░░░░░" +
+        colored(
+            "████",
+            hair_color))
     print("  ██▒▒" + colored("██████████", scarf_color) + "▒▒▒▒██")
     print("  ██▒▒" + colored("██▓▓▓▓██▓▓", scarf_color) + "▒▒▒▒██")
-    print("  ██▒▒" + colored("██", scarf_color) + "▒▒▒▒" + colored("██", scarf_color) + "▒▒▒▒▒▒██")
-    print("  ██▒▒" + colored("██", scarf_color) + "▒▒▒▒" + colored("██", scarf_color) + "▒▒▒▒▒▒██")
+    print(
+        "  ██▒▒" +
+        colored(
+            "██",
+            scarf_color) +
+        "▒▒▒▒" +
+        colored(
+            "██",
+            scarf_color) +
+        "▒▒▒▒▒▒██")
+    print(
+        "  ██▒▒" +
+        colored(
+            "██",
+            scarf_color) +
+        "▒▒▒▒" +
+        colored(
+            "██",
+            scarf_color) +
+        "▒▒▒▒▒▒██")
     print("    ██▒▒▒▒▒▒" + colored("██", scarf_color) + "▒▒▒▒██")
     print("    ██▒▒▒▒" + colored("██", scarf_color) + "▒▒▒▒▒▒██")
     print(colored("      ████████████", pants_color))
@@ -39,8 +111,8 @@ def character_printer(hair_color = None, eye_color = None, scarf_color = None, p
     print(colored("      ████    ████", pants_color))
 
 
-def color_choosing(part ,hair, eye, scarf, pants):
-    
+def color_choosing(part, hair, eye, scarf, pants):
+
     # create color var to save it for return
     color = None
 
@@ -51,7 +123,7 @@ def color_choosing(part ,hair, eye, scarf, pants):
     # while loop to keep asking until a valid color is entered
 
     while True:
-        f.clearScreen()
+        f.clear_screen()
         # if condition for check the part will be printed with the color
         if part == 1:
             character_printer(color, eye, scarf, pants)
@@ -88,8 +160,7 @@ def color_choosing(part ,hair, eye, scarf, pants):
                 break
             else:
                 print("Wrong choice, Try again ...")
-                time.sleep(0.5)           
-
+                time.sleep(0.5)
 
 
 def print_banner():
@@ -98,7 +169,6 @@ def print_banner():
     """
     print("█▀▀ ▄▀█ █▀▄▀█ █▀▀   █▀ █▀▀ ▀█▀ ▀█▀ █ █▄░█ █▀▀ █▀")
     print("█▄█ █▀█ █░▀░█ ██▄   ▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█")
-
 
 
 def get_player_name():
@@ -117,7 +187,7 @@ def get_player_name():
         if name == "":
             f.text_animation("Empty Name")
             name = input("Enter you name: ")
-        else :
+        else:
             f.text_animation(f"Ok your name is {name}")
             break
     return name
@@ -133,15 +203,13 @@ def game_settings():
 
     time.sleep(2)
 
-    f.clearScreen()
+    f.clear_screen()
 
     time.sleep(0.5)
-
 
     print_banner()
 
     f.text_animation("Second, You should customize you character ...")
-
 
     hair_color = None
     eye_color = None
@@ -152,9 +220,7 @@ def game_settings():
         # print character with colors
         character_printer(hair_color, eye_color, scarf_color, pants_color)
 
-
         # print parts choices
-
 
         f.text_animation("Choose character Style")
         time.sleep(0.5)
@@ -173,10 +239,9 @@ def game_settings():
 
         # ask for user choice and return the chosen attributes
 
-
         while True:
             choice = input("Enter 1,2,3,4,5 or Enter: ").strip()
-            
+
             if choice == "":
                 return {
                     "name": player_name,
@@ -185,34 +250,50 @@ def game_settings():
                     "scarf": scarf_color,
                     "pants": pants_color,
                 }
-            
+
             if choice == "1":
-                hair_color = color_choosing(1, hair_color, eye_color, scarf_color, pants_color)
+                hair_color = color_choosing(
+                    1, hair_color, eye_color, scarf_color, pants_color)
                 break
-            
+
             elif choice == "2":
-                eye_color = color_choosing(2, hair_color, eye_color, scarf_color, pants_color)
+                eye_color = color_choosing(
+                    2, hair_color, eye_color, scarf_color, pants_color)
                 break
-            
+
             elif choice == "3":
-                scarf_color = color_choosing(3, hair_color, eye_color, scarf_color, pants_color)
+                scarf_color = color_choosing(
+                    3, hair_color, eye_color, scarf_color, pants_color)
                 break
-            
+
             elif choice == "4":
-                pants_color = color_choosing(4, hair_color, eye_color, scarf_color, pants_color)
+                pants_color = color_choosing(
+                    4, hair_color, eye_color, scarf_color, pants_color)
                 break
-            
+
             elif choice == "5":
-                color_list = ["white", "blue", "cyan", "magenta", "green", "yellow", "red"]
+                color_list = [
+                    "white",
+                    "blue",
+                    "cyan",
+                    "magenta",
+                    "green",
+                    "yellow",
+                    "red"]
                 hair_color = random.choice(color_list)
                 eye_color = random.choice(color_list)
                 scarf_color = random.choice(color_list)
                 pants_color = random.choice(color_list)
-                print("choosed color : ",colored(hair_color, hair_color), colored(eye_color, eye_color), colored(scarf_color, scarf_color), colored(pants_color, pants_color))
+                print(
+                    "choosed color : ", colored(
+                        hair_color, hair_color), colored(
+                        eye_color, eye_color), colored(
+                        scarf_color, scarf_color), colored(
+                        pants_color, pants_color))
                 break
 
             else:
                 print("Wrong choice, Try again ...")
                 time.sleep(0.5)
 
-        f.clearScreen()
+        f.clear_screen()

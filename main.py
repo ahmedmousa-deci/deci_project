@@ -16,26 +16,70 @@ sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 
 # clear screen
 
-f.clearScreen()
+f.clear_screen()
 
 # welcome massage
 
-print(colored("░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░", "light_red"))
-print(colored("░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝  ╚══██╔══╝██╔══██╗", "light_red"))
-print(colored("░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░  ░░░██║░░░██║░░██║", "light_red"))
-print(colored("░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░  ░░░██║░░░██║░░██║", "light_red"))
-print(colored("░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗  ░░░██║░░░╚█████╔╝", "light_red"))
-print(colored("░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝  ░░░╚═╝░░░░╚════╝░", "light_red"))
+print(
+    colored(
+        "░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░",
+        "light_red"))
+print(
+    colored(
+        "░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝  ╚══██╔══╝██╔══██╗",
+        "light_red"))
+print(
+    colored(
+        "░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░  ░░░██║░░░██║░░██║",
+        "light_red"))
+print(
+    colored(
+        "░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░  ░░░██║░░░██║░░██║",
+        "light_red"))
+print(
+    colored(
+        "░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗  ░░░██║░░░╚█████╔╝",
+        "light_red"))
+print(
+    colored(
+        "░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝  ░░░╚═╝░░░░╚════╝░",
+        "light_red"))
 
-print(colored("░█████╗░██╗░░██╗███╗░░░███╗███████╗██████╗░  ░██████╗░░█████╗░███╗░░░███╗███████╗", "light_yellow"))
-print(colored("██╔══██╗██║░░██║████╗░████║██╔════╝██╔══██╗  ██╔════╝░██╔══██╗████╗░████║██╔════╝", "light_yellow"))
-print(colored("███████║███████║██╔████╔██║█████╗░░██║░░██║  ██║░░██╗░███████║██╔████╔██║█████╗░░", "light_yellow"))
-print(colored("██╔══██║██╔══██║██║╚██╔╝██║██╔══╝░░██║░░██║  ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░", "light_yellow"))
-print(colored("██║░░██║██║░░██║██║░╚═╝░██║███████╗██████╔╝  ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗", "light_yellow"))
-print(colored("╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░  ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝", "light_yellow"))
+print(
+    colored(
+        "░█████╗░██╗░░██╗███╗░░░███╗███████╗██████╗░  ░██████╗░░█████╗░███╗░░░███╗███████╗",
+        "light_yellow"))
+print(
+    colored(
+        "██╔══██╗██║░░██║████╗░████║██╔════╝██╔══██╗  ██╔════╝░██╔══██╗████╗░████║██╔════╝",
+        "light_yellow"))
+print(
+    colored(
+        "███████║███████║██╔████╔██║█████╗░░██║░░██║  ██║░░██╗░███████║██╔████╔██║█████╗░░",
+        "light_yellow"))
+print(
+    colored(
+        "██╔══██║██╔══██║██║╚██╔╝██║██╔══╝░░██║░░██║  ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░",
+        "light_yellow"))
+print(
+    colored(
+        "██║░░██║██║░░██║██║░╚═╝░██║███████╗██████╔╝  ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗",
+        "light_yellow"))
+print(
+    colored(
+        "╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░  ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝",
+        "light_yellow"))
 
-print("\n\n\n█▀▄▀█ ▄▀█ █▀▄ █▀▀   █▄▄ █▄█   " + colored("▄▀█ █░█ █▀▄▀█ █▀▀ █▀▄   █▀▄▀█ █▀█ █░█ █▀ ▄▀█", "light_cyan"))
-print("█░▀░█ █▀█ █▄▀ ██▄   █▄█ ░█░   " + colored("█▀█ █▀█ █░▀░█ ██▄ █▄▀   █░▀░█ █▄█ █▄█ ▄█ █▀█", "light_cyan"))
+print(
+    "\n\n\n█▀▄▀█ ▄▀█ █▀▄ █▀▀   █▄▄ █▄█   " +
+    colored(
+        "▄▀█ █░█ █▀▄▀█ █▀▀ █▀▄   █▀▄▀█ █▀█ █░█ █▀ ▄▀█",
+        "light_cyan"))
+print(
+    "█░▀░█ █▀█ █▄▀ ██▄   █▄█ ░█░   " +
+    colored(
+        "█▀█ █▀█ █░▀░█ ██▄ █▄▀   █░▀░█ █▄█ █▄█ ▄█ █▀█",
+        "light_cyan"))
 
 
 time.sleep(3)
@@ -46,7 +90,7 @@ print("Press " + colored("Enter", "red") + " key to continue ...")
 if input("Enter your choice: ").lower() == "q":
     exit()
 
-f.clearScreen()
+f.clear_screen()
 
 # game settings
 
@@ -59,12 +103,11 @@ total_score = 0
 
 
 while True:
-    f.clearScreen()
+    f.clear_screen()
     f.text_animation("Press Enter key to start ...")
     input()
-    f.clearScreen()
+    f.clear_screen()
 
-    
     # story title
 
     print("░█▀▀█ █▀▀▄ ▀█░█▀ █▀▀ █▀▀▄ ▀▀█▀▀ █░░█ █▀▀█ █▀▀ 　 ░▀░ █▀▀▄ 　 ▀▀█▀▀ █░░█ █▀▀ 　 ▒█░▄▀ ░▀░ █▀▀▄ █▀▀▀ █▀▀▄ █▀▀█ █▀▄▀█ ")
@@ -74,22 +117,17 @@ while True:
     print("█░░█ █▀▀ 　 ▒█▒█▒█ █░░█ █░░█ █░░█ █▀▀ █▄▄▀ ▀▀█ ")
     print("▀▀▀▀ ▀░░ 　 ▒█▄▀▄█ ▀▀▀▀ ▀░░▀ ▀▀▀░ ▀▀▀ ▀░▀▀ ▀▀▀")
 
-
-    c0.chapter0(player_name)
+    c0.chapter_0(player_name)
     # chapter 1
 
-    chapter1_decide = c1.chapter1(player_name)
-    
+    chapter1_decide = c1.chapter_1(player_name)
 
     # chapter 2
 
-
-    
     print("░█▀▀█ █──█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█ 　 █▀█ ")
     print("░█─── █▀▀█ █▄▄█ █──█ ──█── █▀▀ █▄▄▀ 　 ─▄▀ ")
     print("░█▄▄█ ▀──▀ ▀──▀ █▀▀▀ ──▀── ▀▀▀ ▀─▀▀ 　 █▄▄")
     time.sleep(1)
-
 
     # decide 1
 
@@ -103,9 +141,9 @@ while True:
         luck = c1.paved_road_walking(player_name)
         f.continue_key()
         chapter2_decide = c2.paved_road(player_name)
-        total_score += 200 
+        total_score += 200
 
-    # if player decide to take the narrow and bumpy path`` 
+    # if player decide to take the narrow and bumpy path``
 
     else:
         luck = c1.narrow_path_walking(player_name)
@@ -131,31 +169,29 @@ while True:
     # if player decide to help old lady
 
     if chapter2_decide == 1:
-        chapter3_decide = c3.helpedLady(player_name)
+        chapter3_decide = c3.helped_lady(player_name)
         total_score += 200
 
     # if player decide to not help old lady
 
     elif chapter2_decide == 2:
-        chapter3_decide = c3.nHelpedLady(player_name)
+        chapter3_decide = c3.not_helped_lady(player_name)
         total_score -= 50
-    
+
     # if player decide to help animal
 
     elif chapter2_decide == 3:
-        chapter3_decide = c3.helpdAnimal(player_name)
+        chapter3_decide = c3.helped_animal(player_name)
         total_score += 100
     # if player decide to not help animal
 
-    else :
-        chapter3_decide = c3.nHelpedAnimal(player_name)
+    else:
+        chapter3_decide = c3.not_helped_animal(player_name)
         total_score -= 50
 
     f.text_animation("\n\nPress Enter key to continue ...")
     input()
-    f.clearScreen()
-
-
+    f.clear_screen()
 
     print("█▀▀ █──█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀█ 　 ─█▀█─")
     print("█── █▀▀█ █▄▄█ █──█ ──█── █▀▀ █▄▄▀ 　 █▄▄█▄")
@@ -220,7 +256,7 @@ while True:
     while True:
         inp = input("y/n: ").lower().strip()
         if inp == "y":
-            f.clearScreen()
+            f.clear_screen()
             break
         elif inp == "n":
             exit()
