@@ -35,7 +35,7 @@ def choice_input(text, decideVal=[]):
     print("\n")
     list = [str(i + 1) for i in range(len(text))]
     while True:
-        choice = input(f"Press {", ".join(list, )} to continue: ").strip()
+        choice = input(f"Press {", ".join(list)} to continue: ").strip()
         if choice in list:
             text_animation(text[int(choice) - 1])
             return decideVal[int(choice) - 1] if len(decideVal) > 0 else choice
