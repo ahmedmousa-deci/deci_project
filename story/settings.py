@@ -195,7 +195,8 @@ def get_player_name():
 
 def game_settings():
     """
-    A function to handle game settings and customization of character attributes.
+    A function to handle game settings and
+    customization of character attributes.
     """
     print_banner()
 
