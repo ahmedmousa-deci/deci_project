@@ -1,5 +1,4 @@
 import function as f
-import keyboard as k
 
 
 # old lady
